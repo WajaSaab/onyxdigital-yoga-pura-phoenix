@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yoga Pura | Premier Yoga/Fitness in Phoenix</title>
+<meta name="description" content="Yoga Pura — the trusted Yoga/Fitness in Phoenix. Exceptional service, easy booking on WhatsApp, and a 5-star local reputation.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Yoga Pura",
+  "description": "Trusted Yoga/Fitness serving Phoenix — exceptional service and easy WhatsApp booking.",
+  "telephone": "(602) 843-7872",
+  "address": { "@type": "PostalAddress", "addressLocality": "Phoenix" },
+  "url": "https://www.yogapura.com",
+  "priceRange": "$$"
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link rel="preconnect" href="https://cdn.tailwindcss.com">
+<link rel="preconnect" href="https://loremflickr.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: { primary: 'var(--primary)', secondary: 'var(--secondary)', cream: 'var(--bg)' },
+      fontFamily: { serif: ['"Playfair Display"', 'serif'], sans: ['Inter', 'sans-serif'] }
+    }
+  }
+}
+</script>
+<style>
+:root{--primary:#5f7a61;--secondary:#d9a86c;--bg:#f7f9f4;}
+html{scroll-behavior:smooth}
+body{background:var(--bg)}
+.font-serif{font-family:'Playfair Display',Georgia,serif}
+::selection{background:var(--secondary);color:#fff}
+.hero-overlay{background:linear-gradient(180deg,rgba(var(--bg-rgb),0.35) 0%,rgba(var(--bg-rgb),0.25) 40%,var(--bg) 96%)}
+.btn-wa{background:var(--primary);color:#fff;transition:all .3s ease}
+.btn-wa:hover{transform:translateY(-2px);box-shadow:0 12px 30px -8px var(--primary);filter:brightness(1.06)}
+.btn-ghost{border:1.5px solid var(--primary);color:var(--primary);transition:all .3s ease}
+.btn-ghost:hover{background:var(--primary);color:#fff;transform:translateY(-2px)}
+.card{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:18px;overflow:hidden;transition:transform .35s ease,box-shadow .35s ease}
+.card:hover{transform:translateY(-6px);box-shadow:0 24px 48px -16px rgba(0,0,0,.16)}
+.card-img{transition:transform .6s ease}
+.card:hover .card-img{transform:scale(1.06)}
+.tag{background:var(--secondary);color:#fff}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.faq-item.open .faq-chevron{transform:rotate(180deg)}
+.faq-chevron{transition:transform .3s ease}
+.nav-link{position:relative}
+.nav-link::after{content:'';position:absolute;left:0;bottom:-4px;width:0;height:2px;background:var(--primary);transition:width .3s ease}
+.nav-link:hover::after{width:100%}
+.stat-num{font-family:'Playfair Display',serif;color:var(--primary)}
+.divider-leaf{color:var(--secondary)}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.float-badge{animation:float 4s ease-in-out infinite}
+</style>
+</head>
+<body class="bg-cream text-stone-800 font-sans antialiased overflow-x-hidden" style="--bg-rgb:247,249,244">
+
+<!-- ================= HEADER ================= -->
+<header id="site-header" class="fixed top-0 inset-x-0 z-50 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="flex items-center justify-between h-20 transition-all duration-300" id="header-inner">
+      <a href="#top" class="flex items-center gap-3">
+        <span class="w-10 h-10 rounded-full flex items-center justify-center text-white text-lg shadow-md" style="background:var(--primary)"><i class="fa-solid fa-leaf"></i></span>
+        <span class="font-serif text-2xl font-bold tracking-tight" style="color:var(--primary)">Yoga Pura</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-stone-600">
+        <a href="#services" class="nav-link hover:text-stone-900">Services</a>
+        <a href="#about" class="nav-link hover:text-stone-900">About</a>
+        <a href="#reviews" class="nav-link hover:text-stone-900">Reviews</a>
+        <a href="#faq" class="nav-link hover:text-stone-900">FAQ</a>
+        <a href="#contact" class="nav-link hover:text-stone-900">Contact</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/16028437872?text=Hi!%20I%20found%20Yoga%20Pura%20online%20and%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener" class="btn-wa hidden sm:inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold">
+          <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp Us
+        </a>
+        <button id="menu-btn" class="md:hidden w-11 h-11 rounded-full border border-stone-300 text-stone-700" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur border-t border-stone-100 shadow-lg">
+    <div class="px-6 py-4 flex flex-col gap-1 text-sm font-semibold text-stone-700">
+      <a href="#services" class="py-3 border-b border-stone-100">Services</a>
+      <a href="#about" class="py-3 border-b border-stone-100">About</a>
+      <a href="#reviews" class="py-3 border-b border-stone-100">Reviews</a>
+      <a href="#faq" class="py-3 border-b border-stone-100">FAQ</a>
+      <a href="#contact" class="py-3 border-b border-stone-100">Contact</a>
+      <a href="https://wa.me/16028437872?text=Hi!%20I%20found%20Yoga%20Pura%20online%20and%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener" class="btn-wa mt-3 rounded-full px-5 py-3 text-center"><i class="fa-brands fa-whatsapp mr-2"></i>Chat on WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section id="top" class="relative min-h-screen flex items-center justify-center text-center overflow-hidden">
+  <img src="https://loremflickr.com/1600/1000/yoga,fitness,wellness?lock=1733138412" alt="Yoga/Fitness in Phoenix" class="absolute inset-0 w-full h-full object-cover" fetchpriority="high" decoding="async" onerror="this.style.display='none'">
+  <div class="absolute inset-0 hero-overlay"></div>
+  <div class="relative z-10 max-w-4xl mx-auto px-6 pt-28 pb-16">
+    <span class="reveal inline-flex items-center gap-2 rounded-full bg-white/80 backdrop-blur px-5 py-2 text-xs font-bold uppercase tracking-[0.2em] text-stone-700 shadow-sm">
+      <i class="fa-solid fa-location-dot" style="color:var(--primary)"></i> Trusted Yoga/Fitness in Phoenix
+    </span>
+    <h1 class="reveal font-serif text-5xl md:text-7xl font-bold leading-[1.08] mt-8 text-stone-900">
+      Where Phoenix Finds<br><em class="not-italic" style="color:var(--primary)">Exceptional</em> Yoga/Fitness Service
+    </h1>
+    <p class="reveal mt-6 text-lg md:text-xl text-stone-700 max-w-2xl mx-auto leading-relaxed">
+      At Yoga Pura, every detail is crafted around you — warm welcomes, honest advice, and results you will love. Discover why locals rate us five stars.
+    </p>
+    <div class="reveal mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a href="https://wa.me/16028437872?text=Hi!%20I%20found%20Yoga%20Pura%20online%20and%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener" class="btn-wa inline-flex items-center gap-3 rounded-full px-8 py-4 text-base font-bold">
+        <i class="fa-brands fa-whatsapp text-xl"></i> Book on WhatsApp
+      </a>
+      <a href="#services" class="btn-ghost inline-flex items-center gap-2 rounded-full px-8 py-4 text-base font-bold bg-white/70 backdrop-blur">
+        Explore Services <i class="fa-solid fa-arrow-down text-sm"></i>
+      </a>
+    </div>
+    <div class="reveal mt-12 flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-sm font-semibold text-stone-600">
+      <span><i class="fa-solid fa-star mr-2 text-amber-400"></i>4.9 Average Rating</span>
+      <span><i class="fa-solid fa-users mr-2" style="color:var(--primary)"></i>2,500+ Happy Clients</span>
+      <span><i class="fa-solid fa-clock mr-2" style="color:var(--secondary)"></i>Same-Day Appointments</span>
+    </div>
+  </div>
+  <a href="#services" class="absolute bottom-8 left-1/2 -translate-x-1/2 text-stone-500 hover:text-stone-800 transition-colors" aria-label="Scroll down"><i class="fa-solid fa-chevron-down text-2xl animate-bounce"></i></a>
+</section>
+
+<!-- ================= FEATURED SERVICES / PRODUCTS ================= -->
+<section id="services" class="py-24 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="reveal text-center max-w-2xl mx-auto">
+      <span class="inline-block rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-white tag">What We Offer</span>
+      <h2 class="font-serif text-4xl md:text-5xl font-bold mt-5 text-stone-900">Featured Services</h2>
+      <p class="mt-4 text-stone-600 leading-relaxed">Handpicked favorites our clients love most — tap any card to book instantly on WhatsApp.</p>
+    </div>
+    <div id="products-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-14"></div>
+  </div>
+</section>
+
+<!-- ================= ABOUT + STATS ================= -->
+<section id="about" class="py-24 px-6 bg-white border-y border-stone-100">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+    <div class="reveal relative">
+      <img src="https://loremflickr.com/900/700/yoga,fitness,wellness?lock=1733138413" alt="Inside Yoga Pura" class="rounded-[24px] w-full h-[420px] object-cover shadow-xl">
+      <div class="float-badge absolute -bottom-6 -right-4 sm:-right-6 bg-white rounded-2xl shadow-xl px-6 py-5 flex items-center gap-4">
+        <span class="w-12 h-12 rounded-full flex items-center justify-center text-white text-xl" style="background:var(--secondary)"><i class="fa-solid fa-heart"></i></span>
+        <div>
+          <p class="font-serif text-2xl font-bold leading-none" style="color:var(--primary)">4.9<span class="text-sm text-stone-500 font-sans font-semibold"> / 5</span></p>
+          <p class="text-xs font-semibold text-stone-500 mt-1">from 600+ local reviews</p>
+        </div>
+      </div>
+    </div>
+    <div class="reveal">
+      <span class="inline-block rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-white tag">Our Story</span>
+      <h2 class="font-serif text-4xl md:text-5xl font-bold mt-5 text-stone-900">A Local Favorite,<br>Built on Care</h2>
+      <p class="mt-5 text-stone-600 leading-relaxed">Yoga Pura has been proudly serving the Phoenix community with dedication and craft. What started as a small local dream has grown into one of the area's most trusted Yoga/Fitness destinations — without ever losing that personal touch.</p>
+      <p class="mt-4 text-stone-600 leading-relaxed">Every client is greeted by name, every detail is tailored to your needs, and every visit leaves you wondering why you went anywhere else.</p>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-10">
+        <div class="rounded-2xl border border-stone-100 bg-cream px-4 py-6 text-center">
+          <p class="stat-num text-3xl font-bold" data-count="10" data-suffix="+">10+</p>
+          <p class="text-xs font-semibold text-stone-500 uppercase tracking-wide mt-2">Years Serving Phoenix</p>
+        </div>
+        <div class="rounded-2xl border border-stone-100 bg-cream px-4 py-6 text-center">
+          <p class="stat-num text-3xl font-bold" data-count="2500" data-suffix="+">2,500+</p>
+          <p class="text-xs font-semibold text-stone-500 uppercase tracking-wide mt-2">Happy Clients</p>
+        </div>
+        <div class="rounded-2xl border border-stone-100 bg-cream px-4 py-6 text-center">
+          <p class="stat-num text-3xl font-bold">4.9</p>
+          <p class="text-xs font-semibold text-stone-500 uppercase tracking-wide mt-2">Average Rating</p>
+        </div>
+        <div class="rounded-2xl border border-stone-100 bg-cream px-4 py-6 text-center">
+          <p class="stat-num text-3xl font-bold" data-count="98" data-suffix="%">98%</p>
+          <p class="text-xs font-semibold text-stone-500 uppercase tracking-wide mt-2">Would Recommend</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section id="reviews" class="py-24 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="reveal text-center max-w-2xl mx-auto">
+      <span class="inline-block rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-white tag">Social Proof</span>
+      <h2 class="font-serif text-4xl md:text-5xl font-bold mt-5 text-stone-900">Loved by Phoenix Locals</h2>
+      <p class="mt-4 text-stone-600 leading-relaxed">Real words from real neighbors — see why our community keeps coming back.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8 mt-14">
+      <div class="reveal card p-8">
+        <i class="fa-solid fa-quote-left text-3xl" style="color:var(--secondary)"></i>
+        <div class="flex gap-1 text-amber-400 mt-4 text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p class="mt-4 text-stone-600 leading-relaxed">"Absolutely wonderful experience from start to finish. The team at Yoga Pura is friendly, professional, and genuinely cares. I would not go anywhere else in Phoenix."</p>
+        <div class="flex items-center justify-between mt-6 pt-5 border-t border-stone-100">
+          <div class="flex items-center gap-3">
+            <span class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold" style="background:var(--primary)">S</span>
+            <div><p class="font-semibold text-stone-800 text-sm">Sarah M.</p><p class="text-xs text-stone-500">Regular since 2021</p></div>
+          </div>
+          <span class="text-[11px] font-bold text-white rounded-full px-3 py-1 tag"><i class="fa-solid fa-location-dot mr-1"></i>Phoenix</span>
+        </div>
+      </div>
+      <div class="reveal card p-8">
+        <i class="fa-solid fa-quote-left text-3xl" style="color:var(--secondary)"></i>
+        <div class="flex gap-1 text-amber-400 mt-4 text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p class="mt-4 text-stone-600 leading-relaxed">"Booked through WhatsApp in under two minutes and got an appointment the same day. Fast, easy, and the results exceeded every expectation. Highly recommend!"</p>
+        <div class="flex items-center justify-between mt-6 pt-5 border-t border-stone-100">
+          <div class="flex items-center gap-3">
+            <span class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold" style="background:var(--primary)">D</span>
+            <div><p class="font-semibold text-stone-800 text-sm">David R.</p><p class="text-xs text-stone-500">First-time customer</p></div>
+          </div>
+          <span class="text-[11px] font-bold text-white rounded-full px-3 py-1 tag"><i class="fa-solid fa-location-dot mr-1"></i>Phoenix</span>
+        </div>
+      </div>
+      <div class="reveal card p-8">
+        <i class="fa-solid fa-quote-left text-3xl" style="color:var(--secondary)"></i>
+        <div class="flex gap-1 text-amber-400 mt-4 text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p class="mt-4 text-stone-600 leading-relaxed">"The whole family uses Yoga Pura now. Fair prices, honest advice, and that rare kind of service that makes you feel like a neighbor, not a number."</p>
+        <div class="flex items-center justify-between mt-6 pt-5 border-t border-stone-100">
+          <div class="flex items-center gap-3">
+            <span class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold" style="background:var(--primary)">A</span>
+            <div><p class="font-semibold text-stone-800 text-sm">Amelia K.</p><p class="text-xs text-stone-500">Loyal customer</p></div>
+          </div>
+          <span class="text-[11px] font-bold text-white rounded-full px-3 py-1 tag"><i class="fa-solid fa-location-dot mr-1"></i>Phoenix</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq" class="py-24 px-6 bg-white border-y border-stone-100">
+  <div class="max-w-3xl mx-auto">
+    <div class="reveal text-center">
+      <span class="inline-block rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-white tag">Good to Know</span>
+      <h2 class="font-serif text-4xl md:text-5xl font-bold mt-5 text-stone-900">Frequently Asked Questions</h2>
+    </div>
+    <div id="faq-list" class="mt-12 space-y-4">
+      <div class="faq-item reveal rounded-2xl border border-stone-200 bg-cream overflow-hidden">
+        <button class="faq-q w-full flex items-center justify-between gap-4 px-6 py-5 text-left font-semibold text-stone-800">
+          <span>How do I book an appointment?</span>
+          <i class="fa-solid fa-chevron-down faq-chevron text-sm" style="color:var(--primary)"></i>
+        </button>
+        <div class="faq-a"><p class="px-6 pb-5 text-stone-600 leading-relaxed">Booking takes under a minute — send us a message on WhatsApp, give us a call, or simply walk in. Same-day appointments are usually available.</p></div>
+      </div>
+      <div class="faq-item reveal rounded-2xl border border-stone-200 bg-cream overflow-hidden">
+        <button class="faq-q w-full flex items-center justify-between gap-4 px-6 py-5 text-left font-semibold text-stone-800">
+          <span>Where are you located?</span>
+          <i class="fa-solid fa-chevron-down faq-chevron text-sm" style="color:var(--primary)"></i>
+        </button>
+        <div class="faq-a"><p class="px-6 pb-5 text-stone-600 leading-relaxed">You will find us at the heart of Phoenix. We are easy to reach with plenty of parking nearby — and we proudly serve all of Phoenix and the surrounding areas.</p></div>
+      </div>
+      <div class="faq-item reveal rounded-2xl border border-stone-200 bg-cream overflow-hidden">
+        <button class="faq-q w-full flex items-center justify-between gap-4 px-6 py-5 text-left font-semibold text-stone-800">
+          <span>What are your opening hours?</span>
+          <i class="fa-solid fa-chevron-down faq-chevron text-sm" style="color:var(--primary)"></i>
+        </button>
+        <div class="faq-a"><p class="px-6 pb-5 text-stone-600 leading-relaxed">We are open Monday to Saturday, 9:00 AM – 7:00 PM. Sunday visits are available by appointment — just message us on WhatsApp to arrange a time.</p></div>
+      </div>
+      <div class="faq-item reveal rounded-2xl border border-stone-200 bg-cream overflow-hidden">
+        <button class="faq-q w-full flex items-center justify-between gap-4 px-6 py-5 text-left font-semibold text-stone-800">
+          <span>Do you serve customers outside Phoenix?</span>
+          <i class="fa-solid fa-chevron-down faq-chevron text-sm" style="color:var(--primary)"></i>
+        </button>
+        <div class="faq-a"><p class="px-6 pb-5 text-stone-600 leading-relaxed">Absolutely. While Phoenix is our home, we regularly welcome clients from neighboring communities. Message us and we will be happy to help.</p></div>
+      </div>
+      <div class="faq-item reveal rounded-2xl border border-stone-200 bg-cream overflow-hidden">
+        <button class="faq-q w-full flex items-center justify-between gap-4 px-6 py-5 text-left font-semibold text-stone-800">
+          <span>Do you provide quotes or pricing upfront?</span>
+          <i class="fa-solid fa-chevron-down faq-chevron text-sm" style="color:var(--primary)"></i>
+        </button>
+        <div class="faq-a"><p class="px-6 pb-5 text-stone-600 leading-relaxed">Yes — we believe in transparent pricing with no hidden fees. Send us a WhatsApp message describing what you need, and you will get a clear quote before you commit.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA BANNER ================= -->
+<section class="px-6 py-20">
+  <div class="reveal max-w-5xl mx-auto rounded-[28px] px-8 py-16 text-center text-white relative overflow-hidden" style="background:linear-gradient(135deg,var(--primary),var(--secondary))">
+    <i class="fa-solid fa-bell absolute -top-6 -left-4 text-white/10 text-[120px] rotate-12"></i>
+    <i class="fa-solid fa-star absolute -bottom-8 -right-6 text-white/10 text-[140px] -rotate-12"></i>
+    <h2 class="font-serif text-4xl md:text-5xl font-bold">Ready to Experience the Difference?</h2>
+    <p class="mt-4 text-white/85 max-w-xl mx-auto leading-relaxed">Join hundreds of happy Phoenix customers. Message us on WhatsApp today — most bookings take less than two minutes.</p>
+    <a href="https://wa.me/16028437872?text=Hi!%20I%20found%20Yoga%20Pura%20online%20and%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener" class="inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 font-bold mt-8 shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all" style="color:var(--primary)">
+      <i class="fa-brands fa-whatsapp text-2xl"></i> (602) 843-7872
+    </a>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer id="contact" class="bg-stone-900 text-stone-300">
+  <div class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-12">
+    <div>
+      <div class="flex items-center gap-3">
+        <span class="w-10 h-10 rounded-full flex items-center justify-center text-white" style="background:var(--primary)"><i class="fa-solid fa-leaf"></i></span>
+        <span class="font-serif text-2xl font-bold text-white">Yoga Pura</span>
+      </div>
+      <p class="mt-5 text-sm leading-relaxed text-stone-400">The Yoga/Fitness that Phoenix trusts — exceptional service, honest pricing, and a warm welcome every single visit.</p>
+      <div class="flex gap-3 mt-6">
+        <a href="https://wa.me/16028437872?text=Hi!%20I%20found%20Yoga%20Pura%20online%20and%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener" class="w-10 h-10 rounded-full bg-stone-800 hover:bg-[var(--primary)] transition-colors flex items-center justify-center" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="tel:(602) 843-7872" class="w-10 h-10 rounded-full bg-stone-800 hover:bg-[var(--primary)] transition-colors flex items-center justify-center" aria-label="Call"><i class="fa-solid fa-phone"></i></a>
+        <a href="#top" class="w-10 h-10 rounded-full bg-stone-800 hover:bg-[var(--primary)] transition-colors flex items-center justify-center" aria-label="Top"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <div>
+      <h3 class="font-serif text-lg font-bold text-white">Quick Links</h3>
+      <ul class="mt-5 space-y-3 text-sm">
+        <li><a href="#services" class="hover:text-white transition-colors"><i class="fa-solid fa-angle-right mr-2" style="color:var(--secondary)"></i>Our Services</a></li>
+        <li><a href="#about" class="hover:text-white transition-colors"><i class="fa-solid fa-angle-right mr-2" style="color:var(--secondary)"></i>About Us</a></li>
+        <li><a href="#reviews" class="hover:text-white transition-colors"><i class="fa-solid fa-angle-right mr-2" style="color:var(--secondary)"></i>Customer Reviews</a></li>
+        <li><a href="#faq" class="hover:text-white transition-colors"><i class="fa-solid fa-angle-right mr-2" style="color:var(--secondary)"></i>FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-serif text-lg font-bold text-white">Contact Us</h3>
+      <ul class="mt-5 space-y-4 text-sm">
+        <li class="flex items-start gap-3"><i class="fa-solid fa-location-dot mt-1" style="color:var(--secondary)"></i><span>the heart of Phoenix</span></li>
+        <li class="flex items-center gap-3"><i class="fa-brands fa-whatsapp" style="color:var(--secondary)"></i><a href="https://wa.me/16028437872?text=Hi!%20I%20found%20Yoga%20Pura%20online%20and%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener" class="hover:text-white transition-colors">(602) 843-7872</a></li>
+        <li class="flex items-center gap-3"><i class="fa-solid fa-clock" style="color:var(--secondary)"></i><span>Mon–Sat: 9:00 AM – 7:00 PM</span></li>
+        <li class="flex items-center gap-3"><i class="fa-solid fa-city" style="color:var(--secondary)"></i><span>Serving Phoenix &amp; nearby areas</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-stone-800 py-6 text-center text-xs text-stone-500 px-6">
+    © 2026 Yoga Pura · All rights reserved · Proudly serving Phoenix
+  </div>
+</footer>
+
+<!-- ================= FLOATING WHATSAPP ================= -->
+<a href="https://wa.me/16028437872?text=Hi!%20I%20found%20Yoga%20Pura%20online%20and%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"
+   class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full flex items-center justify-center text-white text-2xl shadow-2xl transition-transform hover:scale-110" style="background:#25D366">
+  <span class="absolute inset-0 rounded-full animate-pulse opacity-30" style="background:#25D366"></span>
+  <i class="fa-brands fa-whatsapp relative"></i>
+</a>
+
+<!-- ================= PRODUCT DATA + JS ================= -->
+<script type="application/json" id="products-data">[{"img":"https://loremflickr.com/800/600/yoga,fitness,wellness?lock=1733138414","icon":"fa-person","title":"Yoga Classes","desc":"Transformative classes for every level, from complete beginner to advanced practice.","tag":"Most Popular"},{"img":"https://loremflickr.com/800/600/yoga,fitness,wellness?lock=1733138415","icon":"fa-dumbbell","title":"Personal Training","desc":"Personalized training plans tailored to your goals, body, and schedule.","tag":"Recommended"},{"img":"https://loremflickr.com/800/600/yoga,fitness,wellness?lock=1733138416","icon":"fa-leaf","title":"Wellness Coaching","desc":"Complete coaching that nurtures both body and mind in Phoenix.","tag":"Client Favorite"},{"img":"https://loremflickr.com/800/600/yoga,fitness,wellness?lock=1733138417","icon":"fa-calendar-check","title":"Same-Day Booking","desc":"Message us on WhatsApp and lock in your visit in under two minutes — no waiting, no hassle.","tag":"Convenient"},{"img":"https://loremflickr.com/800/600/yoga,fitness,wellness?lock=1733138418","icon":"fa-award","title":"5-Star Rated Service","desc":"Hundreds of five-star reviews from happy Phoenix customers who keep coming back.","tag":"Top Rated"},{"img":"https://loremflickr.com/800/600/yoga,fitness,wellness?lock=1733138419","icon":"fa-location-dot","title":"Convenient Phoenix Location","desc":"Easy to find, easy to reach, with plenty of parking. Proudly serving Phoenix and nearby areas.","tag":"Local"}]</script>
+<script>
+(function(){
+  // ---- Render product cards ----
+  var WA_URL = "https://wa.me/16028437872?text=Hi!%20I%20found%20Yoga%20Pura%20online%20and%20would%20like%20to%20book%20an%20appointment.";
+  var data = [];
+  try { data = JSON.parse(document.getElementById('products-data').textContent); } catch(e) {}
+  var grid = document.getElementById('products-grid');
+  var fallback = [{icon:"fa-star",title:"Premium Service",desc:"Exceptional quality with attention to every detail.",tag:"Popular"}];
+  (data.length ? data : fallback).forEach(function(p, i){
+    var el = document.createElement('div');
+    el.className = 'card reveal';
+    el.style.transitionDelay = (i % 3) * 0.08 + 's';
+    el.innerHTML =
+      '<div class="relative overflow-hidden h-52">' +
+        '<img class="card-img w-full h-full object-cover" src="' + (p.img || '') + '" alt="' + (p.title || 'Service') + '" loading="lazy">' +
+        (p.tag ? '<span class="tag absolute top-4 left-4 text-[11px] font-bold uppercase tracking-wide rounded-full px-3 py-1 shadow">' + p.tag + '</span>' : '') +
+      '</div>' +
+      '<div class="p-6">' +
+        '<div class="flex items-center gap-3">' +
+          '<span class="w-10 h-10 rounded-xl flex items-center justify-center text-white shrink-0" style="background:var(--secondary)"><i class="fa-solid ' + (p.icon || 'fa-star') + '"></i></span>' +
+          '<h3 class="font-serif text-xl font-bold text-stone-900">' + (p.title || 'Service') + '</h3>' +
+        '</div>' +
+        '<p class="mt-3 text-sm text-stone-600 leading-relaxed">' + (p.desc || '') + '</p>' +
+        '<a href="' + WA_URL + '" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-2 text-sm font-bold" style="color:var(--primary)">' +
+          'Book Now <i class="fa-solid fa-arrow-right text-xs"></i></a>' +
+      '</div>';
+    grid.appendChild(el);
+  });
+
+  // ---- Scroll reveal ----
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('visible'); io.unobserve(en.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+
+  // ---- Header shrink on scroll ----
+  var header = document.getElementById('site-header');
+  var inner = document.getElementById('header-inner');
+  function onScroll(){
+    if (window.scrollY > 40) {
+      header.classList.add('bg-white/90','backdrop-blur','shadow-md');
+      inner.classList.remove('h-20'); inner.classList.add('h-16');
+    } else {
+      header.classList.remove('bg-white/90','backdrop-blur','shadow-md');
+      inner.classList.add('h-20'); inner.classList.remove('h-16');
+    }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // ---- Mobile menu ----
+  var mb = document.getElementById('menu-btn'), mm = document.getElementById('mobile-menu');
+  if (mb) mb.addEventListener('click', function(){ mm.classList.toggle('hidden'); });
+  mm.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ mm.classList.add('hidden'); }); });
+
+  // ---- Animated stat counters ----
+  var cio = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(!en.isIntersecting) return;
+      var el = en.target; cio.unobserve(el);
+      var target = parseInt(el.getAttribute('data-count'), 10) || 0;
+      var suffix = el.getAttribute('data-suffix') || '';
+      var dur = 1400, start = null;
+      function fmt(n){ return n >= 1000 ? n.toLocaleString('en-US') : String(n); }
+      function step(ts){
+        if(!start) start = ts;
+        var prog = Math.min((ts - start) / dur, 1);
+        var eased = Math.floor(target * (1 - Math.pow(1 - prog, 3)));
+        el.textContent = fmt(eased) + (prog === 1 ? suffix : '');
+        if(prog < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('.stat-num[data-count]').forEach(function(el){ cio.observe(el); });
+
+  // ---- FAQ accordion ----
+  document.querySelectorAll('.faq-item').forEach(function(item){
+    var btn = item.querySelector('.faq-q'), ans = item.querySelector('.faq-a');
+    btn.addEventListener('click', function(){
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(o){ o.classList.remove('open'); o.querySelector('.faq-a').style.maxHeight = null; });
+      btn.setAttribute('aria-expanded', String(!isOpen));
+      if (!isOpen) { item.classList.add('open'); ans.style.maxHeight = ans.scrollHeight + 'px'; }
+    });
+  });
+})();
+</script>
+</body>
+</html>
